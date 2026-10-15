@@ -84,16 +84,21 @@ body.deries-page .dg-nav-back {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--dg-text-lt);
+  padding: 7px 16px;
+  border: 1.5px solid var(--dg-accent);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--dg-accent);
   text-decoration: none;
   white-space: nowrap;
-  transition: color 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
 }
 
 body.deries-page .dg-nav-back:hover {
-  color: var(--dg-accent);
+  background: var(--dg-accent);
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .dg-nav-back:focus-visible,
@@ -924,11 +929,9 @@ body.deries-page #footer .credits a {
     padding: 0 16px;
   }
 
-  .dg-nav-back {
+  body.deries-page .dg-nav-back {
     font-size: 12px;
-    white-space: normal;
-    max-width: calc(100% - 48px);
-    line-height: 1.25;
+    padding: 6px 14px;
   }
 
   .dg-nav-links {
