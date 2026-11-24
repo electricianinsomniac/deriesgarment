@@ -1,1 +1,8 @@
 DERIES_GARMENT_SPEC.md
+dist/
+.preview/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example

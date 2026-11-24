@@ -1,0 +1,44 @@
+<header class="dg-trust-hero">
+  <div class="container">
+    <a class="dg-text-link" href="/verify/">← Deries Trust Center</a>
+    <p class="dg-trust-kicker">Document verification</p>
+    <h1>Verify a Deries Document</h1>
+    <p class="dg-trust-lead">Check a company profile, catalogue, specification, quotation, proforma invoice, invoice, or partnership document before proceeding.</p>
+  </div>
+</header>
+<div class="container dg-document-content">
+  <section class="dg-trust-section" aria-labelledby="availability-heading">
+    <div class="dg-notice">
+      <h2 id="availability-heading">Request confirmation directly</h2>
+      <p>Automated document ID lookup and PDF integrity checks are not yet available. No document has been verified by this page.</p>
+      <p>Contact Deries Garment using the official details below. Describe the document and provide its ID if present. Ask us to confirm its current status and payment instructions independently.</p>
+      <div class="dg-trust-actions">
+        <a href="mailto:$official_email?subject=Document%20verification%20request" class="dg-btn dg-btn-primary">Email for confirmation</a>
+        <a href="$official_whatsapp" class="dg-btn dg-btn-secondary" target="_blank" rel="noopener noreferrer">Contact via WhatsApp</a>
+      </div>
+    </div>
+    <p>Do not upload confidential documents to unrelated verification services. This page does not collect files, document IDs, or hashes.</p>
+  </section>
+  <section class="dg-trust-section" aria-labelledby="methods-heading">
+    <p class="dg-trust-kicker">Understanding the two checks</p>
+    <h2 id="methods-heading">A record and a file answer different questions</h2>
+    <div class="dg-channel-grid">
+      <article class="dg-trust-card"><span class="dg-card-index">01 / Document ID lookup</span><h3>Is this document registered?</h3><p>A <strong>Registered Document ID</strong> means an accessible record exists in the official registry. IDs can be copied onto altered files. An ID lookup alone does not establish the authenticity of a PDF.</p></article>
+      <article class="dg-trust-card"><span class="dg-card-index">02 / PDF integrity</span><h3>Is this the exact original file?</h3><p>An <strong>Exact File Match</strong> means the SHA-256 hash of the submitted PDF matches the registered final PDF. Even a minor edit changes the file. Matching depends on registry integrity; SHA-256 is not a digital signature.</p></article>
+    </div>
+    <p>When automated verification becomes available, use the original PDF, not a scan, screenshot, recompressed copy, or print-to-PDF export. Files should be hashed on your device; only the hash and verification identifier should be sent for comparison.</p>
+  </section>
+  <section class="dg-trust-section" aria-labelledby="results-heading">
+    <h2 id="results-heading">How to interpret future registry results</h2>
+    <p>These are explanations, not verification results for any document.</p>
+    <dl class="dg-facts">
+      <div><dt>Registered Document ID</dt><dd>An accessible record exists. The submitted file has not been authenticated.</dd></div>
+      <div><dt>Exact File Match</dt><dd>The PDF matches the registered original byte for byte. Check its current status separately before use.</dd></div>
+      <div><dt>File Mismatch</dt><dd>The file is not identical to the registered original. Ask Deries Garment for clarification.</dd></div>
+      <div><dt>Document Not Found</dt><dd>No accessible matching record was found. Contact Deries Garment; do not infer approval.</dd></div>
+      <div><dt>Revoked, Expired, or Superseded</dt><dd>The document is no longer current or authorized for use, even if its file matches.</dd></div>
+    </dl>
+    <p>Restricted quotations and invoices must never expose buyer names, prices, invoice contents, or original files through a public verification link.</p>
+    <a class="dg-text-link" href="/verify/#fraud-prevention">Read our fraud prevention guidance →</a>
+  </section>
+</div>
